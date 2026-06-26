@@ -33,7 +33,7 @@ It also tracks honey harvests over time and shows a Flora Calendar so beekeepers
 | **Hive Detail** | Per-hive history of inspections and harvests |
 
 <p align="center">
-  <img src="images/architecture-diagram.svg" alt="Madhu-Marga architecture: Compose UI talks to a ViewModel, which calls a Repository (Room DB) and a HiveAdvisor" width="100%">
+  width="100%">
 </p>
 
 ---
