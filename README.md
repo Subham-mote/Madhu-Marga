@@ -67,3 +67,82 @@ This keeps the app instant and works even with zero network connectivity — and
 ---
 
 ## 📂 Project Structure
+
+app/src/main/java/com/madhumarga/app/
+
+├── data/
+
+│   ├── Entities.kt          # HiveEntity, InspectionEntity, HarvestEntity
+
+│   ├── Daos.kt              # Room DAOs
+
+│   ├── AppDatabase.kt
+
+│   └── HiveRepository.kt
+
+├── domain/
+
+│   ├── HiveAdvisor.kt       # Rule-based decision matrix
+
+│   ├── HarvestAnalytics.kt  # Year-over-year harvest totals
+
+│   └── FloraCalendar.kt     # Bloom data by region & month
+
+├── ui/
+
+│   ├── HiveViewModel.kt
+
+│   ├── screens/             # Home, HiveRegister, InspectionLog, HarvestTracker, FloraCalendar, HiveDetail
+
+│   ├── components/          # HoneyFlowBar, AdviceCard, SectionHeader
+
+│   └── theme/               # Color.kt, Type.kt, Theme.kt
+
+├── MainActivity.kt
+
+└── MadhuMargaApp.kt
+
+- **HiveEntity** — id, tag, location, notes
+- **InspectionEntity** — queenSeen, pestsSeen, honeyFlow, activityLevel, temperatureC, notes
+- **HarvestEntity** — quantityKg, date, notes
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repo and open it in **Android Studio (Hedgehog or later)**
+2. Let Gradle sync — Room's KSP annotation processor will generate the DB code
+3. Run on an emulator or device with **API 24+**
+
+```bash
+git clone https://github.com/Subham-mote/Madhu-Marga.git
+```
+
+No API keys, no backend setup — everything runs locally on-device.
+
+---
+
+## 🎯 Impact
+
+- **Sweet Revolution** — helping increase high-quality honey production for rural farmers
+- **Biodiversity** — healthier hives support pollination of surrounding crops
+- **Sustainable Income** — a low-cost, high-value secondary income source, made more reliable through data
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome — whether it's expanding the Flora Calendar to more regions, adding more rules to the advisor, or wiring up a real GenAI backend.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+<div align="center">
+
+**Built for beekeepers, by a beekeeper-curious developer 🐝**
+
+</div>
+
